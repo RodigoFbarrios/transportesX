@@ -1,31 +1,32 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    
 }
+ */
 
-/* html {
+
+
+*,*::after,*::before{
     box-sizing: border-box;
-    font-size: 62.5%;  /*1 rem = 10px*/
-
-
-
-
-/* *, *:before, *:after {
-    box-sizing: inherit;  /*hereda las propiedades de su padre*/
-
+    padding: 0;
+    margin: 0;   
+}
+    
+    
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
+    
 }
 
 .logo {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     background-color: #2e64a1;
 }
 
@@ -42,7 +43,7 @@ body {
 }
 
 .navbar-nav-custom .nav-link {
-    margin-right: 10px;
+    margin-right: 5px;
     margin-bottom: 5px;
 }
 
@@ -56,6 +57,7 @@ body {
 #navbarSupportedContent {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .main-container {
@@ -65,7 +67,7 @@ body {
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
-    flex-direction: column;
+    
 }
 
 .imagen-container {
@@ -76,6 +78,7 @@ body {
 .imagen-container img {
     width: 100%;
     height: auto;
+    
 }
 
 .columnas {
@@ -145,6 +148,8 @@ footer {
 }
 h2{
     color: #2e64a1;
+    align-items: center;
+    justify-content: center;
 }
 
 .historia p {
@@ -156,25 +161,36 @@ h2{
     overflow: hidden;
 }
 
-.persona {
+/* .persona {
     width: 18%;
     border: 1px solid gray;
     border-radius: 0.25em;
     float: left;
     margin-left: 2.25%;
     box-sizing: border-box;
-}
+} */
 
 .novedades{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     background-color: #999;
 }
 
+.staff{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
-
+.personas{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
 .persona {
     text-align: center;
@@ -291,19 +307,24 @@ h2{
     margin-left: 0;
 }
 
-.columna {
+/* .columna {
     display: flex;
     width: 50%;
     box-sizing: border-box;
     padding: 0.6em;
-}
+} */
 
 .columna.left {
     display: flex;
     flex-wrap: wrap;
     border-right: 1px solid gray;
 }
-
+.columna.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .columna.right p {
     font-size: 0.9em;
 }
@@ -314,8 +335,8 @@ h2{
 
 .formulario label {
     vertical-align: top;
-    width: 20%;
-    display: inline-block;
+    /* width: 20%; */
+    /* display: inline-block; */
 }
 
 .formulario input,
@@ -326,7 +347,7 @@ h2{
     border: 1px solid #999;
     padding: 0.4em 0.6em;
     font-size: 0.8em;
-    width: 70%;
+    /* width: 70%; */
 }
 
 .formulario input[type="submit"] {
@@ -335,14 +356,17 @@ h2{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     color: white;
     font-size: 1em;
-    width: auto;
+    /* width: auto; */
     cursor: pointer;
 }
-
+.form{
+    display: flex;
+    flex-wrap: wrap;
+}
 .formulario textarea {
     display: flex;
-    height: 10em;
-    resize: none;
+    /* height: 10em;
+    resize: none; */
 }
 
 .formulario .acciones {
