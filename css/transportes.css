@@ -115,9 +115,10 @@ body {
 
 .historia {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    flex-wrap: wrap;
 
 }
 
@@ -147,6 +148,7 @@ h2{
 }
 
 .historia p {
+    display: flex;
     font-size: 0.8em;
 }
 
@@ -290,12 +292,15 @@ h2{
 }
 
 .columna {
+    display: flex;
     width: 50%;
     box-sizing: border-box;
     padding: 0.6em;
 }
 
 .columna.left {
+    display: flex;
+    flex-wrap: wrap;
     border-right: 1px solid gray;
 }
 
@@ -315,6 +320,7 @@ h2{
 
 .formulario input,
 .formulario textarea {
+    display: flex;
     background-color: #ddd;
     border-radius: 5px;
     border: 1px solid #999;
@@ -324,6 +330,7 @@ h2{
 }
 
 .formulario input[type="submit"] {
+    display: flex;
     background-color: #6da9ed;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     color: white;
@@ -333,10 +340,12 @@ h2{
 }
 
 .formulario textarea {
+    display: flex;
     height: 10em;
     resize: none;
 }
 
 .formulario .acciones {
+    display: flex;
     text-align: center;
 }
